@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "lint": "eslint './pages/*.jsx' && './components/*.jsx'"
+    "lint": "eslint './pages/*.jsx' && './components/*.jsx'",
+    "commit": "git-cz"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -22,6 +23,8 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.19.1",
@@ -29,5 +32,10 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "frontmatter-markdown-loader": "^3.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
